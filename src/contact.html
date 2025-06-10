@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenZ Entertainment Foundation</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins">
+    <header class="bg-black text-white sticky">
+      <nav class="lg:flex lg:justify-between">
+        <div class="flex flex-row justify-center align-center pt-[20px]">
+          <div>
+            <img
+              class="lg:w-[60px] lg:h-[60px] lg:mx-[60px] lg:my-[30px] w-[30px] h-[30px]"
+              src="images/WhatsApp Image 2025-04-17 at 21.33.37_5dda904b.jpg"
+              alt="GenZ logo"
+            />
+          </div>
+          <div>
+            <p class="lg:text-2xl lg:my-[40px]">
+              GenZ Entertainment Foundation
+            </p>
+          </div>
+        </div>
+        <div>
+          <ul
+            class="flex flex-row justify-between gap-[20px] my-[40px] mx-[30px] lg:text-2xl text-white"
+          >
+            <li><a href="">Home</a></li>
+            <li><a href="">Celebrity & Brands</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="py-12 px-4 lg:px-0">
+      <div class="max-w-3xl mx-auto p-6 bg-gray-100 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold text-cyan-700 mb-4">
+          Connect with Celebrities
+        </h2>
+        <p class="mb-6 text-gray-700">
+          Fill out this form to start connecting with top celebrities today.
+        </p>
+        <form
+          id="celebrityForm"
+          class="space-y-6 px-4 py-6 max-w-md mx-auto bg-white shadow-md rounded-lg"
+        >
+          <!-- Name Fields -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">
+                First Name <span class="text-red-600">*</span>
+              </label>
+              <input
+                name="firstName"
+                required
+                type="text"
+                placeholder="Alex"
+                class="w-full p-3 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">
+                Last Name <span class="text-red-600">*</span>
+              </label>
+              <input
+                name="lastName"
+                required
+                type="text"
+                placeholder="Scott"
+                class="w-full p-3 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+              />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Email <span class="text-red-600">*</span>
+            </label>
+            <input
+              name="email"
+              required
+              type="email"
+              placeholder="you@example.com"
+              class="w-full p-3 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            />
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Phone Number <span class="text-red-600">*</span>
+            </label>
+            <input
+              name="phone"
+              required
+              type="tel"
+              placeholder="(123) 456-7890"
+              class="w-full p-3 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            />
+          </div>
+
+          <!-- Additional Request -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Additional Membership Request
+            </label>
+            <input
+              name="company"
+              type="text"
+              placeholder="Your Additional Request"
+              class="w-full p-3 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            />
+          </div>
+
+          <!-- Celebrity Interest -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Celebrity Name(s) of Interest
+            </label>
+            <input
+              name="celebrities"
+              type="text"
+              placeholder="Celebrity Names"
+              class="w-full p-3 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            />
+          </div>
+
+          <!-- Budget -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">
+              Suggested Plans
+            </label>
+            <select
+              name="budget"
+              class="w-full p-3 text-base border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            >
+              <option value="">Select Plans</option>
+              <option value="Standard- $250">Standard Membership - $250</option>
+              <option value="VIP- $400">VIP Membership - $400</option>
+              <option value="All-Access- $600">
+                All-Access Membership - $600
+              </option>
+            </select>
+          </div>
+
+          <!-- Submit -->
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-cyan-600 text-white py-3 text-base font-semibold rounded-md hover:bg-cyan-700 transition duration-200"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+
+        <p id="formMessage" class="mt-4 text-sm text-green-600 hidden">
+          Thank you! We will follow up via email shortly.
+        </p>
+      </div>
+    </section>
+
+    <script>
+      const form = document.getElementById("celebrityForm");
+      const message = document.getElementById("formMessage");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+          const response = await fetch("http://localhost:3000/submit-form", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            message.classList.remove("hidden");
+            form.reset();
+          } else {
+            alert("Something went wrong. Please try again.");
+          }
+        } catch (error) {
+          alert("Error submitting form.");
+          console.error(error);
+        }
+      });
+    </script>
+  </body>
+</html>

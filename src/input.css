@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.celeb {
+    background-image: url(./images/celeb.jpg);
+}
